@@ -4,34 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
+    <title>Create</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <h1>Quiz App</h1>
+    <h1 id="create-heading">Create</h1>
     <main>
-      <section>
-        <h2>Question:</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <details>
-          <summary>Show answer</summary>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet.
-        </details>
-        <ul role="list">
-          <li>tag 1</li>
-          <li>tag 2</li>
-          <li>tag 3</li>
-          <li>tag 4</li>
-        </ul>
-      </section>
+      <form action="" aria-labelledby="create-heading">
+        <label for="question-field"
+          >Add your question:<textarea
+            name=""
+            id="question-field"
+            cols="45"
+            rows="10"
+            required
+          ></textarea>
+        </label>
+        <label for="answer-field"
+          >Add your answer:<textarea
+            name=""
+            id="answer-field"
+            cols="45"
+            rows="10"
+            required
+          ></textarea>
+        </label>
+        <label for="tags-field"
+          >Add your tags: <input type="text" id="tags-field" required
+        /></label>
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <nav>
       <ul role="list">
