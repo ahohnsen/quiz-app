@@ -1,5 +1,7 @@
+import html from "./app-grid.html";
+
 export default {
   title: "Components/app-grid",
 };
 
-export const Default = () => `<div class="app-grid">Hello world</div>`;
+export const Default = () => html;

@@ -1,3 +1,8 @@
 .app-grid {
-  background-color: coral;
+  display: grid;
+  grid-template-rows: 48px 1fr 48px;
+}
+
+.app-grid__scrollarea {
+  overflow-y: auto;
 }
