@@ -3,7 +3,7 @@
   grid-template-rows: 48px 1fr 48px;
 }
 .app-grid__header {
-  background-color: rgb(9, 138, 105);
+  border-bottom: 3px solid rgb(6, 129, 99);
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
@@ -15,6 +15,7 @@
 }
 
 .app-grid__footer {
+  background-color: rgb(6, 129, 99);
   grid-column: 1 / 2;
   grid-row: 3 / 4;
 }

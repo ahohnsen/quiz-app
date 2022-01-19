@@ -7,15 +7,15 @@
     <title>Create</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body>
-    <h1 id="create-heading">Create</h1>
-    <main>
+  <body class="app-grid h-100vh">
+    <h1 class="app-grid__header" id="create-heading">Create</h1>
+    <main class="app-grid__scrollarea m-20">
       <form action="" aria-labelledby="create-heading">
         <label for="question-field"
           >Add your question:<textarea
             name=""
             id="question-field"
-            cols="45"
+            cols="40"
             rows="10"
             required
           ></textarea>
@@ -24,7 +24,7 @@
           >Add your answer:<textarea
             name=""
             id="answer-field"
-            cols="45"
+            cols="40"
             rows="10"
             required
           ></textarea>
@@ -35,8 +35,8 @@
         <button type="submit">Submit</button>
       </form>
     </main>
-    <nav>
-      <ul role="list">
+    <nav class="app-grid__footer">
+      <ul role="list" class="navigation">
         <li>
           <a href="./index.html"
             ><img src="./images/home.svg" alt="" width="40" height="40"
