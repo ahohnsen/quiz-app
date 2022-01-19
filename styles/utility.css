@@ -1,23 +1,13 @@
 .mb-20 {
   margin-bottom: 20px !important;
 }
-
+.p-20 {
+  padding: 20px;
+}
 .h-500 {
   height: 500px;
 }
 
 .h-100vh {
   height: 100vh;
-}
-
-.bg-green {
-  background-color: green;
-}
-
-.bg-olive {
-  background-color: olive;
-}
-
-.bg-yellow {
-  background-color: yellow;
 }

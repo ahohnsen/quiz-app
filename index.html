@@ -7,9 +7,9 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body>
-    <h1>Quiz App</h1>
-    <main>
+  <body class="app-grid h-100vh">
+    <h1 class="app-grid__header">Quiz App</h1>
+    <main class="app-grid__scrollarea">
       <section>
         <h2>Question:</h2>
         <p>
@@ -33,11 +33,16 @@
         </ul>
       </section>
     </main>
-    <nav>
-      <ul role="list">
+    <nav class="app-grid__footer">
+      <ul role="list" class="navigation">
         <li>
           <a href="./index.html"
-            ><img src="./images/home.svg" alt="" width="40" height="40"
+            ><img
+              class="navigation__button--active"
+              src="./images/home.svg"
+              alt=""
+              width="40"
+              height="40"
           /></a>
         </li>
         <li>

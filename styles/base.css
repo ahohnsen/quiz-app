@@ -8,7 +8,6 @@ ul[role="list"] {
   list-style: none;
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
+h1 {
+  text-align: center;
 }
