@@ -4,8 +4,11 @@
 .p-20 {
   padding: 20px;
 }
-.h-500 {
-  height: 500px;
+.h-200 {
+  height: 200px;
+}
+.w-300 {
+  width: 300px;
 }
 
 .h-100vh {

@@ -1,6 +1,7 @@
 .app-grid {
   display: grid;
   grid-template-rows: 48px 1fr 48px;
+  height: 100vh;
 }
 .app-grid__header {
   border-bottom: 3px solid rgb(6, 129, 99);
