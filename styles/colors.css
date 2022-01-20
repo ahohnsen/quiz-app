@@ -1,4 +1,5 @@
 :root {
   --color-container: rgba(0, 0, 0, 5%);
   --color-button: rgb(98, 185, 178);
+  --color-shade: rgba(0, 0, 0, 25%);
 }

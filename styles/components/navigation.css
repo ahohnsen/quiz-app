@@ -2,3 +2,24 @@
   display: flex;
   justify-content: space-around;
 }
+
+.navigation__button {
+  width: 25%;
+  position: relative;
+}
+
+.navigation__icon {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.navigation__button--active {
+  background-color: var(--color-shade);
+}
+
+.navigation__button:hover {
+  background-color: var(--color-shade);
+}

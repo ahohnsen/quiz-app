@@ -1,4 +1,4 @@
-import html from "./navigation.js";
+import html from "./navigation.html";
 
 export default {
   title: "Components/navigation",

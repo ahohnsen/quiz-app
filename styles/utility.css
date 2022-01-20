@@ -16,6 +16,11 @@
 .ptb-10 {
   padding: 10px 0;
 }
+
+.h-48 {
+  height: 48px;
+}
+
 .h-250 {
   height: 250px;
 }
@@ -25,6 +30,10 @@
 
 .h-100vh {
   height: 100vh;
+}
+
+.w-100vw {
+  width: 100vw;
 }
 
 .flex-r {
