@@ -1,14 +1,26 @@
 .m-20 {
   margin: 20px !important;
 }
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
 .p-20 {
   padding: 20px;
 }
-.h-200 {
-  height: 200px;
+
+.ptb-10 {
+  padding: 10px 0;
 }
-.w-300 {
-  width: 300px;
+.h-250 {
+  height: 250px;
+}
+.w-350 {
+  width: 350px;
 }
 
 .h-100vh {
@@ -18,5 +30,6 @@
 .flex-r {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: baseline;
 }

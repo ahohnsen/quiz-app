@@ -10,3 +10,7 @@ ul[role="list"] {
 h1 {
   text-align: center;
 }
+
+p {
+  padding: 10px 0 10px 0;
+}

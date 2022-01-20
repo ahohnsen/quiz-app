@@ -4,19 +4,13 @@
   height: 100vh;
 }
 .app-grid__header {
-  border-bottom: 3px solid rgb(6, 129, 99);
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  border-bottom: 3px solid var(--color-button);
 }
 
 .app-grid__scrollarea {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
   overflow-y: auto;
 }
 
 .app-grid__footer {
-  background-color: rgb(6, 129, 99);
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  background-color: var(--color-button);
 }
