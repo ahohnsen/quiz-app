@@ -6,6 +6,7 @@
 
 main {
   margin: 20px;
+  line-height: 1.5;
 }
 
 ul[role="list"] {
@@ -18,7 +19,7 @@ h1 {
   align-self: center;
 }
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 p {
   padding: 10px 0 10px 0;
