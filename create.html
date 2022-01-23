@@ -10,29 +10,29 @@
   <body class="app-grid">
     <h1 class="app-grid__header" id="create-heading">Create</h1>
     <main class="app-grid__scrollarea">
-      <form action="" aria-labelledby="create-heading">
+      <form class="form" action="" aria-labelledby="create-heading">
         <label for="question-field"
-          >Add your question:<textarea
+          >Add your question:
+          <textarea
+            class="form__textarea"
             name=""
             id="question-field"
-            cols="40"
-            rows="10"
             required
           ></textarea>
         </label>
         <label for="answer-field"
           >Add your answer:<textarea
+            class="form__textarea"
             name=""
             id="answer-field"
-            cols="40"
-            rows="10"
             required
           ></textarea>
         </label>
         <label for="tags-field"
-          >Add your tags: <input type="text" id="tags-field" required
+          >Add your tags:
+          <input class="form__input" type="text" id="tags-field" required
         /></label>
-        <button type="submit">Submit</button>
+        <button class="form__button" type="submit">Submit</button>
       </form>
     </main>
     <nav class="navigation">
