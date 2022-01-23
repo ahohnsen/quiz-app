@@ -1,43 +1,13 @@
-.m-20 {
-  margin: 20px !important;
-}
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.p-10 {
-  padding: 10px;
-}
-
-.p-20 {
-  padding: 20px;
-}
-
-.ptb-10 {
-  padding: 10px 0;
-}
-
 .h-48 {
   height: 48px;
 }
 
-.h-250 {
-  height: 250px;
-}
-.w-350 {
-  width: 350px;
+.w-335 {
+  width: 375px;
 }
 
-.h-100vh {
-  height: 100vh;
-}
-
-.w-100vw {
-  width: 100vw;
+.w-375 {
+  width: 375px;
 }
 
 .flex-r {

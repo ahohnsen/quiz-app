@@ -1,20 +1,18 @@
 .navigation {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--color-button);
 }
 
 .navigation__button {
-  width: 25%;
-  position: relative;
+  display: grid;
+  place-items: center;
 }
+
 .navigation__button--active {
   background-color: var(--color-shade);
 }
-.navigation__icon {
-  position: absolute;
-  margin: auto;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
+
+.display-contents {
+  display: contents !important;
 }

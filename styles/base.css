@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
 }
+
+main {
+  margin: 20px;
+}
+
 ul[role="list"] {
   list-style: none;
 }
@@ -13,7 +18,7 @@ h1 {
   align-self: center;
 }
 h2 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 p {
   padding: 10px 0 10px 0;

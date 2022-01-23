@@ -10,7 +10,7 @@
   <body class="app-grid">
     <h1 class="app-grid__header">Quiz App</h1>
     <main class="app-grid__scrollarea">
-      <section class="card p-20 m-20">
+      <section class="card">
         <button class="card__bookmark">
           <img src="../../images/bookmark.svg" alt="" height="40" width="40" />
         </button>
@@ -20,9 +20,9 @@
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.
         </p>
-        <details class="card__answer-box mb-10 ptb-10">
+        <details class="card__answer-box">
           <summary
-            class="card__answer-button mb-10 p-10"
+            class="card__answer-button"
             data-open="Hide answer"
             data-close="Show answer"
           ></summary>
@@ -39,7 +39,7 @@
           <li class="card__tag">tag 4</li>
         </ul>
       </section>
-      <section class="card p-20 m-20">
+      <section class="card">
         <button class="card__bookmark">
           <img src="../../images/bookmark.svg" alt="" height="40" width="40" />
         </button>
@@ -49,9 +49,9 @@
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.
         </p>
-        <details class="card__answer-box mb-10 ptb-10">
+        <details class="card__answer-box">
           <summary
-            class="card__answer-button mb-10 p-10"
+            class="card__answer-button"
             data-open="Hide answer"
             data-close="Show answer"
           ></summary>
@@ -69,10 +69,12 @@
         </ul>
       </section>
     </main>
-    <nav class="app-grid__footer">
-      <ul role="list" class="navigation">
-        <li class="navigation__button navigation__button--active">
-          <a href="./index.html"
+    <nav class="navigation">
+      <ul role="list" class="display-contents">
+        <li class="display-contents">
+          <a
+            href="./index.html"
+            class="navigation__button navigation__button--active"
             ><img
               class="navigation__icon"
               src="./images/home.svg"
@@ -80,8 +82,8 @@
               height="40"
           /></a>
         </li>
-        <li class="navigation__button">
-          <a href="./bookmarks.html"
+        <li class="display-contents">
+          <a href="./bookmarks.html" class="navigation__button"
             ><img
               class="navigation__icon"
               src="./images/bookmark.svg"
@@ -90,8 +92,8 @@
               height="40"
           /></a>
         </li>
-        <li class="navigation__button">
-          <a href="./create.html"
+        <li class="display-contents">
+          <a href="./create.html" class="navigation__button"
             ><img
               class="navigation__icon"
               src="./images/create.svg"
@@ -100,14 +102,14 @@
               height="40"
           /></a>
         </li>
-        <li class="navigation__button">
-          <a href="./profile.html"
+        <li class="display-contents">
+          <a href="./profile.html" class="navigation__button"
             ><img
               class="navigation__icon"
               src="./images/profile.svg"
               alt=""
-              width="40"
-              height="40"
+              width="38"
+              height="38"
           /></a>
         </li>
       </ul>
