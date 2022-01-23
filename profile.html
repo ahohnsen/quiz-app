@@ -10,28 +10,31 @@
   <body class="app-grid">
     <h1 class="app-grid__header">Profile</h1>
     <main class="app-grid__scrollarea">
-      <figure>
-        <img
-          src="  https://source.unsplash.com/200x200"
-          alt=""
-          width="200"
-          height="200"
-        />
-        <figcaption>Profile name</figcaption>
-      </figure>
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua.
-      </p>
-      <h2>Your tags:</h2>
-      <ul role="list" class="flex-r">
-        <li>tag 1</li>
-        <li>tag 2</li>
-        <li>tag 3</li>
-        <li>tag 4</li>
-      </ul>
-      <button type="submit">Logout</button>
+      <section class="profile">
+        <figure class="profile__info">
+          <img
+            class="profile__picture"
+            src="  https://source.unsplash.com/100x100"
+            alt=""
+            width="100"
+            height="100"
+          />
+          <figcaption>Profile name</figcaption>
+        </figure>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <h2>Your tags:</h2>
+        <ul role="list" class="profile__tag-box">
+          <li class="profile__tag">tag 1</li>
+          <li class="profile__tag">tag 2</li>
+          <li class="profile__tag">tag 3</li>
+          <li class="profile__tag">tag 4</li>
+        </ul>
+        <button class="profile__button" type="submit">Logout</button>
+      </section>
     </main>
     <nav class="navigation">
       <ul role="list" class="display-contents">
