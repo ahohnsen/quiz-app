@@ -15,6 +15,12 @@
   cursor: pointer;
 }
 
+.card__tag-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
 .card__tag {
   background: rgba(0, 0, 0, 10%);
   padding: 4px;
