@@ -7,52 +7,109 @@
     <title>Bookmarks</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body class="app-grid h-100vh">
+  <body class="app-grid">
     <h1 class="app-grid__header">Bookmarks</h1>
-    <main class="app-grid__scrollarea m-20">
-      <section class="container p-20">
+    <main class="app-grid__scrollarea">
+      <section class="card">
+        <button class="card__bookmark">
+          <img src="../../images/bookmark.svg" alt="" height="40" width="40" />
+        </button>
         <h2>Question:</h2>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.
         </p>
-        <details>
-          <summary>Show answer</summary>
+        <details class="card__answer-box">
+          <summary
+            class="card__answer-button"
+            data-open="Hide answer"
+            data-close="Show answer"
+          ></summary>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </details>
-        <ul role="list" class="flex-r">
-          <li>tag 1</li>
-          <li>tag 2</li>
-          <li>tag 3</li>
-          <li>tag 4</li>
+        <ul role="list" class="card__tag-box">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button class="card__bookmark">
+          <img src="../../images/bookmark.svg" alt="" height="40" width="40" />
+        </button>
+        <h2>Question:</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <details class="card__answer-box">
+          <summary
+            class="card__answer-button"
+            data-open="Hide answer"
+            data-close="Show answer"
+          ></summary>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </details>
+        <ul role="list" class="card__tag-box">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
         </ul>
       </section>
     </main>
-    <nav class="app-grid__footer">
-      <ul role="list" class="navigation">
-        <li>
-          <a href="./index.html"
-            ><img src="./images/home.svg" alt="" width="40" height="40"
+    <nav class="navigation">
+      <ul role="list" class="display-contents">
+        <li class="display-contents">
+          <a href="./index.html" class="navigation__button"
+            ><img
+              class="navigation__icon"
+              src="./images/home.svg"
+              width="40"
+              height="40"
           /></a>
         </li>
-        <li>
-          <a href="./bookmarks.html"
-            ><img src="./images/bookmark.svg" alt="" width="40" height="40"
+        <li class="display-contents">
+          <a
+            href="./bookmarks.html"
+            class="navigation__button navigation__button--active"
+            ><img
+              class="navigation__icon"
+              src="./images/bookmark.svg"
+              alt=""
+              width="40"
+              height="40"
           /></a>
         </li>
-        <li>
-          <a href="./create.html"
-            ><img src="./images/create.svg" alt="" width="40" height="40"
+        <li class="display-contents">
+          <a href="./create.html" class="navigation__button"
+            ><img
+              class="navigation__icon"
+              src="./images/create.svg"
+              alt=""
+              width="40"
+              height="40"
           /></a>
         </li>
-        <li>
-          <a href="./profile.html"
-            ><img src="./images/profile.svg" alt="" width="40" height="40"
+        <li class="display-contents">
+          <a href="./profile.html" class="navigation__button"
+            ><img
+              class="navigation__icon"
+              src="./images/profile.svg"
+              alt=""
+              width="38"
+              height="38"
           /></a>
         </li>
       </ul>

@@ -3,10 +3,24 @@
   margin: 0;
   padding: 0;
 }
+
+main {
+  margin: 20px;
+  line-height: 1.5;
+}
+
 ul[role="list"] {
   list-style: none;
 }
 
 h1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+h2 {
+  font-size: 1.2rem;
+}
+p {
+  padding: 10px 0 10px 0;
 }

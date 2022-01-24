@@ -1,19 +1,11 @@
-.m-20 {
-  margin: 20px !important;
-}
-.p-20 {
-  padding: 20px;
-}
-.h-500 {
-  height: 500px;
+.h-48 {
+  height: 48px;
 }
 
-.h-100vh {
-  height: 100vh;
+.w-335 {
+  width: 335px;
 }
 
-.flex-r {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.w-375 {
+  width: 375px;
 }

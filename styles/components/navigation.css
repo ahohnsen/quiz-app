@@ -1,4 +1,18 @@
 .navigation {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--color-button);
+}
+
+.navigation__button {
+  display: grid;
+  place-items: center;
+}
+
+.navigation__button--active {
+  background-color: var(--color-shade);
+}
+
+.display-contents {
+  display: contents !important;
 }

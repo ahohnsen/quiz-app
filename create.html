@@ -7,54 +7,75 @@
     <title>Create</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body class="app-grid h-100vh">
+  <body class="app-grid">
     <h1 class="app-grid__header" id="create-heading">Create</h1>
-    <main class="app-grid__scrollarea m-20">
-      <form action="" aria-labelledby="create-heading">
+    <main class="app-grid__scrollarea">
+      <form class="form" action="" aria-labelledby="create-heading">
         <label for="question-field"
-          >Add your question:<textarea
+          >Add your question:
+          <textarea
+            class="form__textarea"
             name=""
             id="question-field"
-            cols="40"
-            rows="10"
             required
           ></textarea>
         </label>
         <label for="answer-field"
           >Add your answer:<textarea
+            class="form__textarea"
             name=""
             id="answer-field"
-            cols="40"
-            rows="10"
             required
           ></textarea>
         </label>
         <label for="tags-field"
-          >Add your tags: <input type="text" id="tags-field" required
+          >Add your tags:
+          <input class="form__input" type="text" id="tags-field" required
         /></label>
-        <button type="submit">Submit</button>
+        <button class="form__button" type="submit">Submit</button>
       </form>
     </main>
-    <nav class="app-grid__footer">
-      <ul role="list" class="navigation">
-        <li>
-          <a href="./index.html"
-            ><img src="./images/home.svg" alt="" width="40" height="40"
+    <nav class="navigation">
+      <ul role="list" class="display-contents">
+        <li class="display-contents">
+          <a href="./index.html" class="navigation__button"
+            ><img
+              class="navigation__icon"
+              src="./images/home.svg"
+              width="40"
+              height="40"
           /></a>
         </li>
-        <li>
-          <a href="./bookmarks.html"
-            ><img src="./images/bookmark.svg" alt="" width="40" height="40"
+        <li class="display-contents">
+          <a href="./bookmarks.html" class="navigation__button"
+            ><img
+              class="navigation__icon"
+              src="./images/bookmark.svg"
+              alt=""
+              width="40"
+              height="40"
           /></a>
         </li>
-        <li>
-          <a href="./create.html"
-            ><img src="./images/create.svg" alt="" width="40" height="40"
+        <li class="display-contents">
+          <a
+            href="./create.html"
+            class="navigation__button navigation__button--active"
+            ><img
+              class="navigation__icon"
+              src="./images/create.svg"
+              alt=""
+              width="40"
+              height="40"
           /></a>
         </li>
-        <li>
-          <a href="./profile.html"
-            ><img src="./images/profile.svg" alt="" width="40" height="40"
+        <li class="display-contents">
+          <a href="./profile.html" class="navigation__button"
+            ><img
+              class="navigation__icon"
+              src="./images/profile.svg"
+              alt=""
+              width="38"
+              height="38"
           /></a>
         </li>
       </ul>
