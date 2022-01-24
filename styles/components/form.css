@@ -1,6 +1,7 @@
 .form {
   display: grid;
   gap: 20px;
+  margin-top: 10px;
 }
 
 .form__textarea {
