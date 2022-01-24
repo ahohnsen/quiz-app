@@ -4,6 +4,8 @@
   position: relative;
   padding: 20px;
   margin: 10px 0 20px 0;
+  display: grid;
+  gap: 25px;
 }
 
 .card__bookmark-button {
@@ -34,27 +36,16 @@
 .card__answer-button {
   width: fit-content;
   background-color: var(--color-button);
+  border: none;
   border-radius: 7%;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 10%);
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
   font-size: 1.05em;
   font-weight: 600;
-  list-style: none;
-  margin-bottom: 15px;
   padding: 10px;
+  display: grid;
+  place-self: center;
 }
 
-.card__answer-box {
-  margin-bottom: 15px;
-  padding: 10px 0 10px 0;
-}
-
-.card__answer-box[open] summary::after {
-  content: attr(data-open);
-}
-
-.card__answer-box:not([open]) summary::after {
-  content: attr(data-close);
+.card__answer--hide {
+  display: none;
 }

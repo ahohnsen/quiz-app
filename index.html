@@ -12,10 +12,9 @@
     <h1 class="app-grid__header">Quiz App</h1>
     <main class="app-grid__scrollarea">
       <section class="card">
-        <button data-js="button" class="card__bookmark-button">
+        <button data-js="bookmark-button" class="card__bookmark-button">
           <svg
             data-js="bookmark"
-            class="card__bookmark"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -36,18 +35,19 @@
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.
         </p>
-        <details class="card__answer-box">
-          <summary
-            class="card__answer-button"
-            data-open="Hide answer"
-            data-close="Show answer"
-          ></summary>
+        <button data-js="answer-button" class="card__answer-button">
+          <span data-js="answer-button-show">Show answer</span>
+          <span data-js="answer-button-hide" class="card__answer--hide"
+            >Hide answer</span
+          >
+        </button>
+        <p data-js="answer-text" class="card__answer--hide">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
-        </details>
+        </p>
         <ul role="list" class="card__tag-box">
           <li class="card__tag">tag 1</li>
           <li class="card__tag">tag 2</li>
@@ -56,10 +56,9 @@
         </ul>
       </section>
       <section class="card">
-        <button data-js="button" class="card__bookmark-button">
+        <button data-js="bookmark-button" class="card__bookmark-button">
           <svg
             data-js="bookmark"
-            class="card__bookmark"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -80,18 +79,19 @@
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.
         </p>
-        <details class="card__answer-box">
-          <summary
-            class="card__answer-button"
-            data-open="Hide answer"
-            data-close="Show answer"
-          ></summary>
+        <button data-js="answer-button" class="card__answer-button">
+          <span data-js="answer-button-show">Show answer</span>
+          <span data-js="answer-button-hide" class="card__answer--hide"
+            >Hide answer</span
+          >
+        </button>
+        <p data-js="answer-text" class="card__answer--hide">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
-        </details>
+        </p>
         <ul role="list" class="card__tag-box">
           <li class="card__tag">tag 1</li>
           <li class="card__tag">tag 2</li>
@@ -106,41 +106,22 @@
           <a
             href="./index.html"
             class="navigation__button navigation__button--active"
-            ><img
-              class="navigation__icon"
-              src="./images/home.svg"
-              width="40"
-              height="40"
+            ><img src="./images/home.svg" width="40" height="40"
           /></a>
         </li>
         <li class="display-contents">
           <a href="./bookmarks.html" class="navigation__button"
-            ><img
-              class="navigation__icon"
-              src="./images/bookmark.svg"
-              alt=""
-              width="40"
-              height="40"
+            ><img src="./images/bookmark.svg" alt="" width="40" height="40"
           /></a>
         </li>
         <li class="display-contents">
           <a href="./create.html" class="navigation__button"
-            ><img
-              class="navigation__icon"
-              src="./images/create.svg"
-              alt=""
-              width="40"
-              height="40"
+            ><img src="./images/create.svg" alt="" width="40" height="40"
           /></a>
         </li>
         <li class="display-contents">
           <a href="./profile.html" class="navigation__button"
-            ><img
-              class="navigation__icon"
-              src="./images/profile.svg"
-              alt=""
-              width="38"
-              height="38"
+            ><img src="./images/profile.svg" alt="" width="38" height="38"
           /></a>
         </li>
       </ul>
