@@ -1,5 +1,6 @@
 :root {
-  --color-container: rgba(0, 0, 0, 5%);
-  --color-button: rgb(98, 185, 178);
-  --color-shade: rgba(0, 0, 0, 25%);
+  --color-container: #f2f2f2;
+  --color-green: rgb(64, 145, 108);
+  --color-olive: rgb(45, 106, 79);
+  --color-dark-green: rgb(8, 28, 21);
 }

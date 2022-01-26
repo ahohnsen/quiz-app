@@ -1,7 +1,7 @@
 .navigation {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: var(--color-button);
+  background-color: var(--color-green);
 }
 
 .navigation__button {
@@ -10,7 +10,7 @@
 }
 
 .navigation__button--active {
-  background-color: var(--color-shade);
+  background-color: var(--color-olive);
 }
 
 .display-contents {

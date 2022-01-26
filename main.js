@@ -8,12 +8,6 @@ bookmarkButton.addEventListener('click', () => {
 });
 
 const answerButton = document.querySelector('[data-js="answer-button"]');
-const answerButtonShow = document.querySelector(
-  '[data-js="answer-button-show"]'
-);
-const answerButtonHide = document.querySelector(
-  '[data-js="answer-button-hide"]'
-);
 const answerText = document.querySelector('[data-js="answer-text"]');
 
 answerButton.addEventListener('click', () => {

@@ -18,8 +18,8 @@
 }
 
 .card__bookmark-button--saved {
-  fill: red;
-  stroke: red;
+  fill: var(--color-green);
+  stroke: var(--color-dark-green);
 }
 
 .card__tag-box {
@@ -35,7 +35,7 @@
 
 .card__answer-button {
   width: fit-content;
-  background-color: var(--color-button);
+  background-color: var(--color-green);
   border: none;
   border-radius: 7%;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 10%);
