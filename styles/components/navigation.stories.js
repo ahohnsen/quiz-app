@@ -1,7 +1,7 @@
-import html from "./navigation.html";
+import html from './navigation.html';
 
 export default {
-  title: "Components/navigation",
+  title: 'Components/navigation',
 };
 
 export const Regular = () => html;

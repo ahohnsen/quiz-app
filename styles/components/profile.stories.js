@@ -1,7 +1,7 @@
-import html from "./profile.html";
+import html from './profile.html';
 
 export default {
-  title: "Components/profile",
+  title: 'Components/profile',
 };
 
 export const Regular = () => html;
