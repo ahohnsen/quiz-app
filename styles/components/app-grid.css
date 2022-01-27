@@ -4,7 +4,7 @@
   height: 100vh;
 }
 .app-grid__header {
-  border-bottom: 3px solid var(--color-button);
+  border-bottom: 3px solid var(--color-green);
 }
 
 .app-grid__scrollarea {

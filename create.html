@@ -6,22 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./create.js"></script>
   </head>
   <body class="app-grid">
     <h1 class="app-grid__header" id="create-heading">Create</h1>
     <main class="app-grid__scrollarea">
       <form class="form" action="" aria-labelledby="create-heading">
-        <label for="question-field"
+        <label class="form__label" for="question-field"
           >Add your question:
+          <output class="form__output" data-js="output-question"
+            >400 characters remaining
+          </output>
           <textarea
+            data-js="textarea-question"
+            maxlength="200"
             class="form__textarea"
             name=""
             id="question-field"
             required
           ></textarea>
         </label>
-        <label for="answer-field"
-          >Add your answer:<textarea
+        <label class="form__label" for="answer-field"
+          >Add your answer:
+          <output class="form__output" data-js="output-answer"
+            >400 characters remaining</output
+          >
+          <textarea
+            data-js="textarea-answer"
+            maxlength="200"
             class="form__textarea"
             name=""
             id="answer-field"
