@@ -1,7 +1,7 @@
 {
   "name": "quiz-app",
   "scripts": {
-    "test": "npm run htmlhint $$ npm run prettier:write",
+    "test": "npm run htmlhint && npm run prettier:write",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write .",
     "htmlhint": "npx htmlhint '**/*.html'",
