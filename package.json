@@ -1,7 +1,7 @@
 {
   "name": "quiz-app",
   "scripts": {
-    "test": "npm run htmlhint && npm run prettier:write",
+    "test": "npm run htmlhint && npm run prettier:check",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write .",
     "htmlhint": "npx htmlhint '**/*.html'",
@@ -29,6 +29,10 @@
     "babel-loader": "^8.2.3",
     "htmlhint": "^1.1.1",
     "husky": "^7.0.0",
+    "lint-staged": "^12.3.2",
     "prettier": "2.5.1"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
