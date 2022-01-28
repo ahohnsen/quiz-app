@@ -1,7 +1,7 @@
-import html from "./card.html";
+import html from './card.html';
 
 export default {
-  title: "Components/card",
+  title: 'Components/card',
 };
 
 export const Regular = () => html;

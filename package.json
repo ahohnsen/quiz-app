@@ -1,12 +1,13 @@
 {
   "name": "quiz-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run htmlhint && npm run prettier:check",
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
+    "htmlhint": "npx htmlhint '**/*.html'",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,13 @@
     "@storybook/addon-essentials": "^6.4.13",
     "@storybook/addon-links": "^6.4.13",
     "@storybook/html": "^6.4.13",
-    "babel-loader": "^8.2.3"
+    "babel-loader": "^8.2.3",
+    "htmlhint": "^1.1.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.2",
+    "prettier": "2.5.1"
   },
-  "dependencies": {}
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
 }
