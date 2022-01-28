@@ -1,16 +1,22 @@
-console.clear();
+import Form from './js/Form.js';
+
+const allLabelElements = document.querySelectorAll('[data-js="create-field"]');
+
+allLabelElements.forEach(labelElement => {
+  Form(labelElement);
+});
 
 const bookmarkIcon = document.querySelector('[data-js="bookmark"]');
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 
-bookmarkButton.addEventListener('click', () => {
+bookmarkButton?.addEventListener('click', () => {
   bookmarkIcon.classList.toggle('card__bookmark-button--saved');
 });
 
 const answerButton = document.querySelector('[data-js="answer-button"]');
 const answerText = document.querySelector('[data-js="answer-text"]');
 
-answerButton.addEventListener('click', () => {
+answerButton?.addEventListener('click', () => {
   if (answerButton.textContent.trim() === 'Show answer') {
     answerButton.textContent = 'Hide answer';
   } else {
