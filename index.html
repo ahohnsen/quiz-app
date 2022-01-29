@@ -9,8 +9,9 @@
     <script type="module" defer src="./index.js"></script>
   </head>
   <body class="app-grid">
-    <h1 class="app-grid__header">Quiz App</h1>
-    <main class="app-grid__scrollarea">
+    <!--Index page-->
+    <h1>Quiz App</h1>
+    <main class="app-grid__scrollarea pages pages--active" data-pages="1">
       <section class="card" data-js="card">
         <button data-js="bookmark-button" class="card__bookmark-button">
           <svg
@@ -94,31 +95,174 @@
         </ul>
       </section>
     </main>
+    <!--Bookmark page-->
+    <main class="app-grid__scrollarea pages" data-pages="2">
+      <section class="card" data-js="card">
+        <button data-js="bookmark-button" class="card__bookmark-button">
+          <svg
+            data-js="bookmark"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke="var(--color-dark-green)"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-bookmark"
+            height="35px"
+            width="35px"
+            fill="var(--color-container)"
+          >
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+          </svg>
+        </button>
+        <h2>Question:</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <button data-js="answer-button" class="card__answer-button">
+          Show answer
+        </button>
+        <p data-js="answer-text" class="card__answer--hide">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+        <ul role="list" class="card__tag-box">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
+        </ul>
+      </section>
+      <section class="card" data-js="card">
+        <button data-js="bookmark-button" class="card__bookmark-button">
+          <svg
+            data-js="bookmark"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke="var(--color-dark-green)"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-bookmark"
+            height="35px"
+            width="35px"
+            fill="var(--color-container)"
+          >
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+          </svg>
+        </button>
+        <h2>Question:</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <button data-js="answer-button" class="card__answer-button">
+          Show answer
+        </button>
+        <p data-js="answer-text" class="card__answer--hide">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+        <ul role="list" class="card__tag-box">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
+        </ul>
+      </section>
+    </main>
+    <!--Create page-->
+    <main class="app-grid__scrollarea pages" data-pages="3">
+      <form class="form" action="" aria-labelledby="create-heading">
+        <label class="form__label" for="question-field" data-js="create-field"
+          >Add your question:
+          <output class="form__output" data-js="output-characters"
+            >300 characters remaining
+          </output>
+          <textarea
+            data-js="textarea"
+            maxlength="300"
+            class="form__textarea"
+            name=""
+            id="question-field"
+            required
+          ></textarea>
+        </label>
+        <label class="form__label" for="answer-field" data-js="create-field"
+          >Add your answer:
+          <output class="form__output" data-js="output-characters"
+            >300 characters remaining</output
+          >
+          <textarea
+            data-js="textarea"
+            maxlength="300"
+            class="form__textarea"
+            name=""
+            id="answer-field"
+            required
+          ></textarea>
+        </label>
+        <label for="tags-field"
+          >Add your tags:
+          <input class="form__input" type="text" id="tags-field" required
+        /></label>
+        <button class="form__button" type="submit">Submit</button>
+      </form>
+    </main>
+    <!--Profile page-->
+    <main class="app-grid__scrollarea pages" data-pages="4">
+      <section class="profile">
+        <figure class="profile__info">
+          <img
+            class="profile__picture"
+            src="  https://source.unsplash.com/100x100?portrait"
+            alt=""
+            width="100"
+            height="100"
+          />
+          <figcaption>Profile name</figcaption>
+        </figure>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <h2>Your tags:</h2>
+        <ul role="list" class="profile__tag-box">
+          <li class="profile__tag">tag 1</li>
+          <li class="profile__tag">tag 2</li>
+          <li class="profile__tag">tag 3</li>
+          <li class="profile__tag">tag 4</li>
+        </ul>
+        <button class="profile__button" type="submit">Logout</button>
+      </section>
+    </main>
+    <!--Profile navigation-->
     <nav class="navigation">
-      <ul role="list" class="display-contents">
-        <li class="display-contents">
-          <a
-            href="./index.html"
-            class="navigation__button navigation__button--active"
-            ><img src="./images/home.svg" width="40" height="40" alt=""
-          /></a>
-        </li>
-        <li class="display-contents">
-          <a href="./bookmarks.html" class="navigation__button"
-            ><img src="./images/bookmark.svg" alt="" width="40" height="40"
-          /></a>
-        </li>
-        <li class="display-contents">
-          <a href="./create.html" class="navigation__button"
-            ><img src="./images/create.svg" alt="" width="40" height="40"
-          /></a>
-        </li>
-        <li class="display-contents">
-          <a href="./profile.html" class="navigation__button"
-            ><img src="./images/profile.svg" alt="" width="38" height="38"
-          /></a>
-        </li>
-      </ul>
+      <button
+        class="navigation__button navigation__button--active"
+        data-nav="1"
+      >
+        <img src="./images/home.svg" width="40" height="40" alt="" />
+      </button>
+      <button class="navigation__button" data-nav="2">
+        <img src="./images/bookmark.svg" alt="" width="40" height="40" />
+      </button>
+      <button class="navigation__button" data-nav="3">
+        <img src="./images/create.svg" alt="" width="40" height="40" />
+      </button>
+      <button class="navigation__button" data-nav="4">
+        <img src="./images/profile.svg" alt="" width="38" height="38" />
+      </button>
     </nav>
   </body>
 </html>

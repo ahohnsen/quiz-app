@@ -9,3 +9,10 @@
 .w-375 {
   width: 375px;
 }
+
+.pages {
+  display: none;
+}
+.pages--active {
+  display: block;
+}
