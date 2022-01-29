@@ -5,7 +5,7 @@ export default function Form(labelElement) {
   );
 
   textarea.addEventListener('input', () => {
-    const counter = 400 - textarea.value.length;
+    const counter = 300 - textarea.value.length;
     if (counter === 1) {
       outputCharacters.value = counter + ' character remaining';
     } else {
