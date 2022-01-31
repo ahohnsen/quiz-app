@@ -3,9 +3,6 @@
   grid-template-rows: 48px 1fr 48px;
   height: 100vh;
 }
-.app-grid__header {
-  border-bottom: 3px solid var(--color-green);
-}
 
 .app-grid__scrollarea {
   overflow-y: auto;

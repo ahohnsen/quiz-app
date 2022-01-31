@@ -37,7 +37,7 @@
   width: fit-content;
   background-color: var(--color-green);
   border: none;
-  border-radius: 7%;
+  border-radius: 8px;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 10%);
   font-size: 1.05em;
   font-weight: 600;

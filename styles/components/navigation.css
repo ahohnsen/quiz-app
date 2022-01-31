@@ -1,18 +1,15 @@
 .navigation {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: var(--color-green);
 }
 
 .navigation__button {
   display: grid;
   place-items: center;
+  background-color: var(--color-green);
+  border: none;
 }
 
 .navigation__button--active {
   background-color: var(--color-olive);
-}
-
-.display-contents {
-  display: contents !important;
 }
