@@ -39,7 +39,8 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  font-size: 1.05em;
+  font-family: inherit;
+  font-size: 1em;
   font-weight: 600;
   padding: 10px 20px;
 }
