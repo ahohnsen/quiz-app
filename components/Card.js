@@ -30,6 +30,5 @@ export default function Card(cardElement) {
   function createQuizCard(card) {
     questionText.innerHTML = `<p>${card[0].question}</p>`;
     answerText.innerHTML = `<p>${card[0].answer}</p>`;
-    console.log(questionText);
   }
 }
