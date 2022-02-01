@@ -1,7 +1,7 @@
 import html from './app-grid.html';
 
 export default {
-  title: 'Components/app-grid',
+  title: 'Components/App-Grid',
 };
 
 export const Default = () => html;

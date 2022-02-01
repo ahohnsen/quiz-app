@@ -1,7 +1,7 @@
 import html from './form.html';
 
 export default {
-  title: 'Components/form',
+  title: 'Components/Form',
 };
 
 export const Regular = () => html;
