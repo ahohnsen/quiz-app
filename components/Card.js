@@ -19,4 +19,17 @@ export default function Card(cardElement) {
     }
     answerText.classList.toggle('card__answer--hide');
   });
+
+  const questionText = cardElement.querySelector('[data-js="question-text"]');
+
+  const apiUrl = 'https://jservice.io/api/random';
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => createQuizCard(data));
+
+  function createQuizCard(card) {
+    questionText.innerHTML = `<p>${card[0].question}</p>`;
+    answerText.innerHTML = `<p>${card[0].answer}</p>`;
+    console.log(questionText);
+  }
 }
