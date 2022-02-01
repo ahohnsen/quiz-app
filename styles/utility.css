@@ -10,9 +10,6 @@
   width: 375px;
 }
 
-.pages {
+.hidden {
   display: none;
-}
-.pages--active {
-  display: block;
 }
