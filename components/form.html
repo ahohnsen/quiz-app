@@ -1,0 +1,35 @@
+<form class="form" action="" aria-labelledby="create-heading">
+  <label class="form__label" for="question-field" data-js="create-field"
+    >Add your question:
+    <output class="form__output" data-js="output-characters"
+      >300 characters remaining
+    </output>
+    <textarea
+      data-js="textarea"
+      maxlength="300"
+      class="form__textarea"
+      name=""
+      id="question-field"
+      required
+    ></textarea>
+  </label>
+  <label class="form__label" for="answer-field" data-js="create-field"
+    >Add your answer:
+    <output class="form__output" data-js="output-characters"
+      >300 characters remaining</output
+    >
+    <textarea
+      data-js="textarea"
+      maxlength="300"
+      class="form__textarea"
+      name=""
+      id="answer-field"
+      required
+    ></textarea>
+  </label>
+  <label for="tags-field"
+    >Add your tags:
+    <input class="form__input" type="text" id="tags-field" required
+  /></label>
+  <button class="form__button" type="submit">Submit</button>
+</form>

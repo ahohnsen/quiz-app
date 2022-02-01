@@ -2,8 +2,8 @@
 @import './base.css';
 @import './utility.css';
 
-@import './components/app-grid.css';
-@import './components/navigation.css';
-@import './components/card.css';
-@import './components/form.css';
-@import './components/profile.css';
+@import '../components/app-grid.css';
+@import '../components/navigation.css';
+@import '../components/card.css';
+@import '../components/form.css';
+@import '../components/profile.css';
